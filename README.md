@@ -38,20 +38,38 @@ The study utilizes a Difference-in-Differences (DiD) approach to examine how sup
 
 ## Appendix: Variable Definitions
 
+The following table details the construction of all variables used in the analysis, consistent with the original paper's appendix.
+
 **Table A1: Variable Definitions**
 
 | Variable | Symbol | Definition |
 | :--- | :--- | :--- |
 | **Dependent Variables** | | |
-| Trade Credit (Main) | `TC1A` | The ratio of accounts payable to total assets at the end of the year. |
-| Trade Credit (Alt) | `TC2A` | The sum of accounts payable and notes payable, scaled by total assets. |
-| Net Trade Credit | `TC3A` | Accounts payable + notes payable - prepayments, scaled by total assets. |
+| Trade Credit 1 | `TC1A` | The sum of accounts payable, scaled by total assets. |
+| Trade Credit 2 | `TC2A` | The sum of accounts payable and notes payable, scaled by total assets. |
+| Net Trade Credit | `TC3A` | The sum of accounts payable and notes payable, minus the amounts collected in advance, scaled by total assets. |
 | **Independent Variables** | | |
-| Pandemic | `Pandemic` | Dummy = 1 for fiscal years 2020 and later. |
-| Treatment | `Treat_HighCase` | Dummy = 1 if the firm is in a province ranked in the top 50% of cumulative COVID-19 cases. |
+| Pandemic | `Pandemic` | A dummy variable which equals one if the year falls within the pandemic period (year $\ge$ 2020), otherwise zero. |
+| Treatment | `Treat_HighCase` | A dummy variable which equals one if the firm's province ranks in the top 50% of cumulative confirmed cases during the sample period, otherwise zero. |
 | **Control Variables** | | |
-| ST Status | `ST` | Dummy = 1 if the firm is designated as "Special Treatment" (financial distress). |
-| Industry | `Industry` | Industry classification code used for fixed effects. |
+| Size | `Size` | The natural logarithm of total assets. |
+| Leverage | `Leverage` | The ratio of total debt to total assets. |
+| ROA | `ROA` | The ratio of net income after tax to total assets. |
+| Growth | `Growth` | The yearly growth rate in sales revenue. |
+| PPE | `PPE` | The ratio of property, plant, and equipment to total assets. |
+| CFO | `CFO` | The ratio of net operating cash flow to total assets. |
+| Loss | `Loss` | A dummy variable which equals one if the company's net profit is greater than zero, otherwise zero. |
+| Dual | `Dual` | A dummy variable which equals one if the CEO also serves as the chairperson of the board of directors, otherwise zero. |
+| Top1 | `Top1` | The percentage of shares held by the largest shareholder. |
+| Top5 | `Top5` | The percentage of shares held by the top five shareholders. |
+| HHI | `HHI` | The Herfindahl–Hirschman Index, representing the sum of the squared market shares of all firms within each industry-year. |
+| Big4 | `Big4` | A dummy variable which equals one for firms audited by Big4 auditing firms, otherwise zero. |
+| Indep | `Indep` | The proportion of independent directors to board members. |
+| Board | `Board` | The logarithm of total directors' number. |
+| SOE | `SOE` | A dummy variable which equals one for state-owned enterprises, otherwise zero. |
+| Bank | `Bank` | The ratio of the sum of short-term and long-term debt to total debts. |
+| Age | `Age` | The natural logarithm of the company's age in capital market. |
+| Liquidity | `Liquidity` | The lagged value of current assets divided by short-term liabilities. |
 
 ---
 *For any questions regarding the replication code, please open an Issue in this repository.*
