@@ -1,3 +1,7 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Stata Version](https://img.shields.io/badge/Stata-15%2B-blue)](https://www.stata.com/)
+[![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.econlet.2023.111339-green)](https://doi.org/10.1016/j.econlet.2023.111339)
+
 # Replication Package: COVID-19 and Trade Credit Financing
 
 This repository contains the dataset and Stata code required to replicate the empirical results of the paper:
