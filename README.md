@@ -45,9 +45,9 @@ The following table details the construction of all variables used in the analys
 | Variable | Symbol | Definition |
 | :--- | :--- | :--- |
 | **Dependent Variables** | | |
-| Trade Credit 1 | `TC1A` | The sum of accounts payable, scaled by total assets. |
-| Trade Credit 2 | `TC2A` | The sum of accounts payable and notes payable, scaled by total assets. |
-| Net Trade Credit | `TC3A` | The sum of accounts payable and notes payable, minus the amounts collected in advance, scaled by total assets. |
+| Trade Credit 1 | `TC1` | The sum of accounts payable, scaled by total assets. |
+| Trade Credit 2 | `TC2` | The sum of accounts payable and notes payable, scaled by total assets. |
+| Net Trade Credit | `TC3` | The sum of accounts payable and notes payable, minus the amounts collected in advance, scaled by total assets. |
 | **Independent Variables** | | |
 | Pandemic | `Pandemic` | A dummy variable which equals one if the year falls within the pandemic period (year $\ge$ 2020), otherwise zero. |
 | Treatment | `Treat_HighCase` | A dummy variable which equals one if the firm's province ranks in the top 50% of cumulative confirmed cases during the sample period, otherwise zero. |
